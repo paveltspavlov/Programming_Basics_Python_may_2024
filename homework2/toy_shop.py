@@ -25,7 +25,7 @@ profit = total_price - store_rent
 
 if profit >= field_trip:
     profit_after_paying_fieldtrip = profit - field_trip
-    print(f"Yes! {profit_after_paying_fieldtrip} lv left.")
+    print(f"Yes! {profit_after_paying_fieldtrip:.2f} lv left.")
 else:
     profit_after_paying_fieldtrip = field_trip - profit
-    print(f"Not enough money! {profit_after_paying_fieldtrip} lv needed.")
+    print(f"Not enough money! {profit_after_paying_fieldtrip:.2f} lv needed.")
