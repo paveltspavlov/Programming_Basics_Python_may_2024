@@ -1,30 +1,21 @@
-import array
-
-text_to_convert = array.array(input())
-
-a= 1
+text_to_convert = input()
+a = 1
 e = 2
 i = 3
 o = 4
 u = 5
 
 result = 0
-i = 0
-if i < text_to_convert.len():
-    if a == text_to_convert(i):
+for char in text_to_convert:
+    if char == 'a':
         result += a
-        i += 1
-    elif e in text_to_convert:
+    elif char == 'e':
         result += e
-        i += 1
-    elif i in text_to_convert:
+    elif char == 'i':
         result += i
-        i += 1
-    elif o in text_to_convert:
+    elif char == 'o':
         result += o
-        i += 1
-    elif u in text_to_convert:
+    elif char == 'u':
         result += u
-        i += 1
 
 print(result)
