@@ -9,14 +9,14 @@ for i in range(num_of_tournaments):
     place = input()
     if place == "W":
         points += 2000
-        number_of_wins += number_of_wins
+        number_of_wins += 1
     elif place == "F":
         points += 1200
-    else:
+    elif place == "SF":
         points += 720
     i += i
 
-percentage_of_wins = number_of_wins / num_of_tournaments * 100
+percentage_of_wins = (number_of_wins  /num_of_tournaments) * 100
 average_points = points / num_of_tournaments
 
 print(f"Final points: {initial_points + points}")
