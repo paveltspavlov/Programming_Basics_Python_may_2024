@@ -1,5 +1,7 @@
 num = int(input())
 
-buff = 0
+buff = 1
 
-while
+while buff <= num:
+    print(buff)
+    buff = (buff*2) + 1
